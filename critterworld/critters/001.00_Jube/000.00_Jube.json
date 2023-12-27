@@ -1,0 +1,15 @@
+{
+    "Name": "Jube",
+    "Age": 40,
+    "Attributes": {
+      "Color": "#b01c41",
+      "Species": "Spawn",
+      "Occupation": "Priviledged Orphan",
+      "Personality": "Ignorant",
+      "Description": "Jube lives in a huge mansion left by whoever owned it before, it has a buttload of money in it's bank account and spends it carefreely."
+    },
+    "ImageInfo": {
+      "Avatar": "https://i.imgur.com/qy2i1L4.jpeg",
+      "Banner": "https://i.imgur.com/qy2i1L4.jpeg"
+    }
+  }

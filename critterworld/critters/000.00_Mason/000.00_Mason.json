@@ -1,0 +1,15 @@
+{
+    "Name": "Mason",
+    "Age": 40,
+    "Attributes": {
+      "Color": "#5fad55",
+      "Species": "Frog",
+      "Occupation": "Pet Shop Clerk",
+      "Personality": "Sassy",
+      "Description": "Mason works and lives with Mark at the pet shop store."
+    },
+    "ImageInfo": {
+      "Avatar": "https://i.imgur.com/qy2i1L4.jpeg",
+      "Banner": "https://i.imgur.com/qy2i1L4.jpeg"
+    }
+  }
