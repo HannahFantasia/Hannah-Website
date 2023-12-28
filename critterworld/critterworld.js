@@ -34,4 +34,4 @@ class imageInfo {
     }
   }
   
-loadFileAndPrintToConsole('/./critters/000.00_Mason/000.00_Mason.json');
+loadFileAndPrintToConsole('https://hannahfantasia.com/critterworld/critters/000.00_Mason/000.00_Mason.json');
