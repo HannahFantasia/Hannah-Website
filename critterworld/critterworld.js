@@ -1,3 +1,11 @@
+let critter_objects = []
+const base_url = "https://raw.githubusercontent.com/HannahFantasia/HannahFantasia-Site/main/critterworld/critters/"
+
+
+const name_list = [
+  "000.00_Mason",
+  "001.00_Jube"]
+
 document.addEventListener("DOMContentLoaded", (event) => {
   displayCritters()
 });
@@ -11,12 +19,7 @@ const fetchSingle = async (url) => {
 }
 
 const fetchCritters = async () => {
-  const base_url = "https://raw.githubusercontent.com/HannahFantasia/HannahFantasia-Site/main/critterworld/critters/"
-  const name_list = [
-    "000.00_Mason",
-    "001.00_Jube"]
 
-  let critter_objects = []
   name_list.forEach((name) => {
     const cur_url = `${base_url}${name}/${name}.json`
 
@@ -34,16 +37,17 @@ const fetchCritters = async () => {
 
 const displayCritters = async () => {
   const critters = await fetchCritters();
-  
-  let dataDisplay = critters.map((critter) => {
+  const jsonString = JSON.stringify(critters);
+  console.log(jsonString);
+  let dataDisplay = jsonString.map((critter) => {
     const {Name, Age, Attributes, ImageInfo} = critter; // LIST YOUR JSON DATA HERE
     const {Species, Occupation, Personality, Description} = Attributes;
     const {Avatar, Banner} = ImageInfo;
     
     return `
     <div class="container">
-    <img>src=${Avatar}>
-    <img>src=${Banner}>
+    <img>src=${Avatar} alt="They are a "${Species}>
+    <img>src=${Banner} alt=${Description}>
     <p>Name: ${Name}</p>
     <p>Species: ${Species}</p>
     <p>Age: ${Age}</p>
