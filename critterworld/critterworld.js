@@ -1,37 +1,51 @@
-class imageInfo {
-    constructor(avatar, banner){
-      this.Avatar = avatar;
-      this.Banner = banner;
-    }
+const apiEndpoint = "https://hannahfantasia.com/critterworld/critters/000.00_Mason/000.00_Mason.json";
+const display = document.querySelector("#display-data");
+const input = document.querySelector("#input");
+
+
+function check(str){
+  if(str.match(/(\w*)\.json$/) == null){
+      console.log('false');
+      return false;
   }
-  
-  class attributes {
-    constructor(color, species, occupation, personality, description){
-      this.Color = color;
-      this.Species = species;
-      this.Occupation = occupation;
-      this.Personality = personality;
-      this.Description = description;
-    }
-  };
-  
-  class baseCritter{
-    constructor(name, age, attributes, image_info){
-      this.Name = name;
-      this.Age = age;
-      this.Attributes = attributes;
-      this.ImageInfo = image_info;
-    }
-  };
-  
-  async function loadFileAndPrintToConsole(url) {
-    try {
-      const response = await fetch(url);
-      const data = await response.text();
-      console.log(data);
-    } catch (err) {
-      console.error(err);
-    }
+  else {
+      console.log('true');
+      return true;
   }
-  
-loadFileAndPrintToConsole('https://hannahfantasia.com/critterworld/critters/000.00_Mason/000.00_Mason.json');
+}
+
+
+// FUNCTION TO FETCH A JSON FILE  
+const getData = async () => {
+  const res = await fetch(apiEndpoint);
+  if (!res.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  const data = await res.json();
+  return data;
+}
+
+
+// FUNCTION TO VISUALISE THE DATA
+const displayUsers = async () => {
+  const payload = await getData();
+
+  let dataDisplay = payload.map((object) => {
+    const {name, species, age, occupation, personality, description} = object; // LIST YOUR JSON DATA HERE
+
+    return `
+    <div class="container">
+    <p>Name: ${name}</p>
+    <p>Species: ${species}</p>
+    <p>Age: ${age}</p>
+    <p>Occupation: ${occupation}</p>
+    <p>Personality: ${personality}</p>
+    <p>Description: ${description}</p>
+    </div>
+    `/////AND HERE ABOVE DIV^////
+  }).join("");
+
+  display.innerHTML = dataDisplay;
+}
+
+displayUsers();
