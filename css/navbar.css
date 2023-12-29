@@ -1,21 +1,49 @@
+@import 'reset.css';
+@import 'fonts.css';
 /* Add a black background color to the top navigation */
-  
-  /* Style the links inside the navigation bar */
-  .navbar a {
-    color: black;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    font-family: Sniglet-Regular;
-    font-size: 2.5vmin
+
+.navbar {
+  border: 1px solid #ffffff;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* « The magic. */
 }
-  
-  /* Change the color of links on hover */
-  .navbar a:hover {
-    color: rgb(114, 22, 22);
+
+.navbar li {
+  display: inline; /* « More magic. */
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: Sniglet-ExtraBold;
+  display: inline-block; /* « Last bit of magic. */
+  padding: 10px;
+  color: #ffd900;
+  -webkit-text-stroke-width: 0.2vmin;
+  -webkit-text-stroke-color: #000000;
+  font-size: 3vmin;
+}
+
+
+.logo a{
+    text-align: center;
+    font-family: Sniglet-ExtraBold;
+    color: #ffd900;
+    margin-left: 0px;
+    font-size: 9vmin;
+    -webkit-text-stroke-width: 0.2vmin;
+    -webkit-text-stroke-color: #000000;
   }
-  
-  /* Add a color to the active/current link */
-  .navbar a.active {
-    color: rgb(114, 22, 22);
-  }
+
+  /* .contact a{
+    text-align: center;
+    text-decoration: none;
+    font-family: Sniglet-ExtraBold;
+    color: #ffd900;
+    margin-left: 0px;
+    font-size: 1em;
+    -webkit-text-stroke-width: 0.02em;
+    -webkit-text-stroke-color: #000000;
+  } */
