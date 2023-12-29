@@ -36,14 +36,14 @@ const displayCritters = async () => {
   const critters = await fetchCritters();
   
   let dataDisplay = critters.map((critter) => {
-    const {Name, Age, Attributes} = critter; // LIST YOUR JSON DATA HERE
+    const {Name, Age, Attributes, ImageInfo} = critter; // LIST YOUR JSON DATA HERE
     const {Species, Occupation, Personality, Description} = Attributes;
     const {Avatar, Banner} = ImageInfo;
     
     return `
     <div class="container">
-    <img>src=${Avatar}</img>
-    <img>src=${Banner}</img>
+    <img>src=${Avatar}>
+    <img>src=${Banner}>
     <p>Name: ${Name}</p>
     <p>Species: ${Species}</p>
     <p>Age: ${Age}</p>
