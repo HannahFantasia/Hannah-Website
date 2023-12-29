@@ -40,9 +40,8 @@ const displayCritters = async () => {
       const { Name, Id, Age, Attributes, ImageInfo } = critter;
       const { Species, Occupation, Personality, Description } = Attributes;
       const { Avatar} = ImageInfo;
-      console.log(critter);
       return `
-      <div class="container_${Id}">
+      <div class=Container_${Id}>
         <img src="${Avatar}" alt="They are a ${Species}">
         <p>Name: ${Name}</p>
         <p>Species: ${Species}</p>
