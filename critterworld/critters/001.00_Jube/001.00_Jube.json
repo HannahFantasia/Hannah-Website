@@ -1,6 +1,7 @@
 {
     "Name": "Jube",
-    "Age": 40,
+    "Age": "40",
+    "ID": "001.00",
     "Attributes": {
       "Color": "#b01c41",
       "Species": "Spawn",

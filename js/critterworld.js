@@ -7,7 +7,6 @@ const display = document.querySelector("#display-data");
 const name_list = [
     "000.00_Mason",
     "001.00_Jube",
-    "002.00_Jason"
   ];
 
 const fetchSingle = async (url) => {
@@ -38,14 +37,13 @@ const displayCritters = async () => {
     const critters = await fetchCritters();
     let dataDisplay = critters.map((critter) => {
 
-      const { Name, Age, Attributes, ImageInfo } = critter;
+      const { Name, Id, Age, Attributes, ImageInfo } = critter;
       const { Species, Occupation, Personality, Description } = Attributes;
-      const { Avatar, Banner } = ImageInfo;
-  
+      const { Avatar} = ImageInfo;
+      console.log(critter);
       return `
-      <div class="container">
+      <div class="container_${Id}">
         <img src="${Avatar}" alt="They are a ${Species}">
-        <img src="${Banner}" alt="${Description}">
         <p>Name: ${Name}</p>
         <p>Species: ${Species}</p>
         <p>Age: ${Age}</p>
