@@ -1,4 +1,4 @@
-const apiEndpoint = "https://hannahfantasia.com/critterworld/critters/000.00_Mason/000.00_Mason.json";
+const apiEndpoint = "hannahfantasia.com/critterworld/critters/000.00_Mason/000.00_Mason.json";
 const display = document.querySelector("#display-data");
 const input = document.querySelector("#input");
 
@@ -17,17 +17,19 @@ function check(str){
 
 // FUNCTION TO FETCH A JSON FILE  
 const getData = async () => {
-  const res = await fetch(apiEndpoint);
+  const res = await fetch(entries);
   if (!res.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const data = await res.json();
+  console.log(data)
   return data;
 }
 
-
 // FUNCTION TO VISUALISE THE DATA
 const displayUsers = async () => {
+  let query = input.value;
+
   const payload = await getData();
 
   let dataDisplay = payload.map((object) => {
