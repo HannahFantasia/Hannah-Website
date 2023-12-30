@@ -57,6 +57,7 @@ const refreshCSS = (critters) => {
         transition: transform 0.1s, background 0.5s;
         position: relative;
         cursor: pointer;
+        margin: 10px; /* Add margin to space out the containers */
       `;
 
       Container.addEventListener("mouseover", () => {
@@ -141,7 +142,7 @@ const showModal = (critter, color) => {
     <p>Name: ${Name}</p>
     <p>Species: ${Species}</p>
     <p>Age: ${Age}</p>
-    <p>Occupation: ${Occupation}</p>
+    p>Occupation: ${Occupation}</p>
     <p>Personality: ${Personality}</p>
     <p>Description: ${Description}</p>
   `;
