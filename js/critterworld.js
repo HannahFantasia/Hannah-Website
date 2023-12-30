@@ -33,6 +33,25 @@ const fetchCritters = async () => {
   return critter_objects_valid;
 }
 
+const setHTMLCollectionCSS = (collection, css) => {
+  Array.from(collection).forEach((element) => {
+    element.style.cssText = css
+  })
+}
+
+const refreshCSS = (critters) => {
+  critters.forEach((critter) => {
+    const current_class = `container_${critter.Id}`
+    const Containers = document.getElementsByClassName(current_class)
+    Array.from(Containers).forEach((Container) => {
+      const { Color } = critter.Attributes
+      Container.style.cssText = `background-color: ${Color};`
+
+      const Occupations = Container.getElementsByClassName("occupation")
+      setHTMLCollectionCSS(Occupations,`background-color: #0000FF;`)
+    })
+  })
+}
 const displayCritters = async () => {
     const critters = await fetchCritters();
     let dataDisplay = critters.map((critter) => {
@@ -41,16 +60,17 @@ const displayCritters = async () => {
       const { Species, Occupation, Personality, Description } = Attributes;
       const { Avatar} = ImageInfo;
       return `
-      <div class=Container_${Id}>
-        <img src="${Avatar}" alt="They are a ${Species}">
-        <p>Name: ${Name}</p>
-        <p>Species: ${Species}</p>
-        <p>Age: ${Age}</p>
-        <p>Occupation: ${Occupation}</p>
-        <p>Personality: ${Personality}</p>
-        <p>Description: ${Description}</p>
+      <div class=container_${Id}>
+        <img class=avatar src="${Avatar}" alt="They are a ${Species}">
+        <p class=name>Name: ${Name}</p>
+        <p class=species>Species: ${Species}</p>
+        <p class=age>Age: ${Age}</p>
+        <p class=occupation>Occupation: ${Occupation}</p>
+        <p class=personality>Personality: ${Personality}</p>
+        <p class=description>: ${Description}</p>
       </div>`;
     }).join("");
   
     display.innerHTML = dataDisplay;
+    refreshCSS(critters);
 }
