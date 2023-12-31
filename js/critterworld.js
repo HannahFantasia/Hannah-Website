@@ -8,7 +8,7 @@ const nameList = [
   "000.00_Mason", 
   "001.00_Jube",
   "002.00_Skeep",
-  "003.00_Koota",
+  "003.00_Koota"
 ];
 
 const fetchSingle = async (url) => {
