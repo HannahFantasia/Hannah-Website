@@ -6,7 +6,9 @@ const display = document.querySelector("#display-data");
 
 const nameList = [
   "000.00_Mason", 
-  "001.00_Jube"
+  "001.00_Jube",
+  "002.00_Skeep",
+  "003.00_Koota",
 ];
 
 const fetchSingle = async (url) => {
