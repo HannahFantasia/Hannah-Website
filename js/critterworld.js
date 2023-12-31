@@ -29,7 +29,6 @@ const fetchCritters = async () => {
         const critter = await fetchSingle(curUrl);
         return critter;
       } catch (error) {
-        console.log(`${name} was not found`);
       }
     })
   );
@@ -55,14 +54,23 @@ const refreshCSS = (critters) => {
       const { Color } = critter.Attributes;
 
       container.style.cssText = `
-        border: 10px ridge #ccc;
-        border-radius: 10px;
-        transition: transform 0.3s;, background 1s; /* Adjusted duration for the background animation */
-        position: relative;
-        cursor: pointer;
-        margin: 2px;
-        position: relative;
-      `;
+      border: 10px ridge #ccc;
+      border-radius: 10px;
+      transition: transform 0.3s, background 1s; /* Adjusted duration for the background animation */
+      position: relative;
+      cursor: pointer;
+      margin: 2px;
+      position: relative;
+      background: ${Color}; /* Set background color */
+  `;
+  
+  container.addEventListener("mouseover", () => {
+      container.style.transform = "scale(1.05)";
+  });
+  
+  container.addEventListener("mouseout", () => {
+      container.style.transform = "rotate(0deg)";
+  });
 
       container.addEventListener("mouseover", () => {
         container.style.transform = "scale(1.05";

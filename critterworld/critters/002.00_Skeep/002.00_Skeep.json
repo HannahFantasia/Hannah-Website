@@ -1,0 +1,17 @@
+{
+    "Name": "Skeep",
+    "Age": "13",
+    "Id": "002.00",
+    "Attributes": {
+      "Color": "#ffc300",
+      "Species": "Skeep",
+      "Occupation": "Cleptomaniac",
+      "Personality": "Goal-Oriented",
+      "Description": "Skeep. He lives. He steals. He skeeps.",
+      "Story": "Skeep, all he does is steal. He has no mercy to anyone and goes after the pacifist. Many victims have fallen for the allmighty Skeep in Crittertown, will he make bigger ventues and take over the world with his cleptomanisicsm?"
+    },
+    "ImageInfo": {
+      "Avatar": "critterworld/critters/002.00_Skeep/002.00_Skeep.png",
+      "Portrait": "critterworld/critters/002.00_Skeep/002.00_Skeep_Portrait.png"
+    }
+  }
