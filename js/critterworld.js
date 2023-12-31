@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 const display = document.querySelector("#display-data");
 
-const nameList = ["000.00_Mason", "001.00_Jube"];
+const nameList = [
+  "000.00_Mason", 
+  "001.00_Jube"
+];
 
 const fetchSingle = async (url) => {
   const fetch_data = fetch(url);
@@ -141,7 +144,7 @@ const showModal = (critter, color) => {
   modal.appendChild(modalContent);
 
   const { Name, Age, Attributes, ImageInfo } = critter;
-  const { Species, Occupation, Personality, Description } = Attributes;
+  const { Species, Occupation, Personality, Description, Story } = Attributes;
   const { Portrait } = ImageInfo;
 
   modalContent.innerHTML += `
