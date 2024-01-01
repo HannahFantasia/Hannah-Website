@@ -48,7 +48,12 @@ const setHTMLCollectionCSS = (collection, css) => {
 };
 
 const refreshCSS = (critters) => {
-  display.style.cssText = "display: flex; flex-wrap: wrap;";
+  display.style.cssText = `
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+  `;
   critters.forEach((critter) => {
     const currentClass = `container_${critter.Id}`;
     const containers = document.getElementsByClassName(currentClass);
@@ -56,32 +61,23 @@ const refreshCSS = (critters) => {
       const { Color } = critter.Attributes;
 
       container.style.cssText = `
-      border: 10px ridge #ccc;
-      border-radius: 10px;
-      transition: transform 0.3s, background 1s; /* Adjusted duration for the background animation */
-      position: relative;
-      cursor: pointer;
-      margin: 2px;
-      position: relative;
-      background: ${Color}; /* Set background color */
-  `;
-  
-  container.addEventListener("mouseover", () => {
-      container.style.transform = "scale(1.05)";
-  });
-  
-  container.addEventListener("mouseout", () => {
-      container.style.transform = "rotate(0deg)";
-  });
+        border: 10px ridge #ccc;
+        border-radius: 10px;
+        transition: transform 0.3s, background 1s;
+        position: relative;
+        cursor: pointer;
+        margin: 2px;
+        position: relative;
+        background: ${Color};
+      `;
 
       container.addEventListener("mouseover", () => {
-        container.style.transform = "scale(1.05";
+        container.style.transform = "scale(1.05)";
       });
 
       container.addEventListener("mouseout", () => {
         container.style.transform = "rotate(0deg)";
       });
-      
 
       const avatars = container.getElementsByClassName("avatar");
       setHTMLCollectionCSS(avatars, `
@@ -101,7 +97,7 @@ const refreshCSS = (critters) => {
         margin: 0;
         width: 90%;
         text-align: left;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Black outline */
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         z-index: 1;
       `);
 
@@ -116,7 +112,6 @@ const refreshCSS = (critters) => {
         background: ${Color};
         z-index: 0;
       `;
-      
 
       container.appendChild(bar);
 
@@ -126,6 +121,7 @@ const refreshCSS = (critters) => {
     });
   });
 };
+
 
 const showModal = (critter, color) => {
   const modal = document.createElement("div");
@@ -142,14 +138,15 @@ const showModal = (critter, color) => {
   `;
 
   const modalContent = document.createElement("div");
-  modalContent.style.cssText = `
-    background-color: ${color};
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 10px;
-  `;
+modalContent.style.cssText = `
+  background-color: ${color};
+  margin: 15% auto;
+  padding: 20px;
+  border: 5px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2) inset;
+`;
 
   modal.appendChild(modalContent);
 
