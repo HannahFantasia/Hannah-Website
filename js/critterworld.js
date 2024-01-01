@@ -68,7 +68,9 @@ const refreshCSS = (critters) => {
         cursor: pointer;
         margin: 2px;
         position: relative;
-        background: radial-gradient(circle, #55B5C8 1%, ${Color} 100%);
+        background: 
+        radial-gradient(circle, #55B5C8 1%, #ffff),${Color};
+        background-blend-mode: multiply;
       `;
 
       container.addEventListener("mouseover", () => {

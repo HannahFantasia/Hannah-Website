@@ -7,4 +7,7 @@
     font-family: Sniglet-Extrabold;
     src: url('../fonts/Sniglet/Sniglet-ExtraBold.ttf');
   }
-  
+  @font-face {
+    font-family: Rujis-Handwriting;
+    src: url('../fonts/rujis-handwriting-font-v20/RujisHandwritingFontV20-vrqZ.ttf');
+  }

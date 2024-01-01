@@ -1,0 +1,11 @@
+@import 'reset.css';
+@import 'fonts.css';
+
+
+
+.copyrights {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
