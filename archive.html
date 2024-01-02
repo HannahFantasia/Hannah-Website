@@ -1,35 +1,120 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <script src="../js/jquery.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4RQD9J71P"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-J4RQD9J71P');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-J4RQD9J71P');
     </script>
+    <link rel="stylesheet" type="text/css" href="/css/archive.css">
     <!-- Google tag (gtag.js) -->
     <title>HannahFantasia Archive</title>
+    <meta name="HANNAHFANTASIA ARCHIVE" content="HANNAH'S PREVIOUS FANTASIA">
 </head>
-<body>
-  
-    <!--Navigation bar-->
-    <div id="navbar"></div><script>$(function(){$("#navbar").load("navbar.html");});</script>
-    <!--end of Navigation bar-->
-    
-    <p class=title>Archive</p>
-    
-    <br>
-    
-    <footer>
-      
-      <p class= copyrights>© <script>document.write(new Date().getFullYear())</script> HannahFantasia. All Rights Reserved.</p>
-    
-    </footer>
-  
-  </body>
-  </html>
-  
 
+<body>
+
+    <!--Navigation bar-->
+    <div id="navbar"></div>
+    <script>
+        $(function () {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <p class=title>Archive</p>
+    <p class=subtitle>Starts of ideas or sometimes abandoned ones.</p>
+    <div class=year_2022>
+      <div class=media-container>
+          <div class=category>
+              <p class=Year>2022</p>
+              <p class=Animclips22>Animation clips</p>
+              <video src="archive/2022/Micheal.mp4" class=Micheal controls loop></video>
+              <video src="archive/2022/Miguell.mp4" class=Miguell controls loop></video>
+          </div>
+    </div>
+    <div class=year_2021>
+        <div class=media-container>
+            <div class=category>
+                <p class=Year>2021</p>
+                <p class=Animclips21>Animation clips</p>
+                <video src="archive/2021/Submarine.mp4" class=Submarine controls loop></video>
+                <video src="archive/2021/Loopmason.mp4" class=Loopmason controls loop></video>
+                <video src="archive/2021/Sequencestart.mp4" class=Sequencestart controls loop></video>
+            </div>
+            <div class=category>
+                <p class=Walkman>Walkman texture paints</p>
+                <img src="archive/2021/Walkman/Walkman1.jpeg" class=Walkman></img>
+                <img src="archive/2021/Walkman/Walkman2.jpeg" class=Walkman></img>
+                <img src="archive/2021/Walkman/Walkman3.jpeg" class=Walkman></img>
+            </div>
+            <div class=category>
+                <p class=Krabbelenbabbel>Krabbel en Babbel Concept Sculpts</p>
+                <video src="archive/2021/Krabbelbabbel/Laura.mp4" class=Krabbelenbabbel controls loop></video>
+                <video src="archive/2021/Krabbelbabbel/Lauratests.mp4" class=Krabbelenbabbel controls loop></video>
+                <img src="archive/2021/Krabbelbabbel/Expressions.png" class=Krabbeenbabbel></img>
+            </div>
+            <div class=category>
+                <p class=Interior>Interior render tests</p>
+                <img src="archive/2021/Interior/Interior1.png" class=Interior></img>
+                <img src="archive/2021/Interior/Interior2.png" class=Interior></img>
+                <img src="archive/2021/Interior/Interior3.png" class=Interior></img>
+            </div>
+            <div class=category>
+                <p class=Blockfilm>Blockfilm about christmas</p>
+                <video src="archive/2021/Blockfilm/Blockfilm.mp4" class=Blockfilm controls loop></video>
+                <video src="archive/2021/Blockfilm/BlockfilmAnimatic.mp4" class=Blockfilm controls loop></video>
+            </div>
+            <div class=category>
+                <p class=Blockfilm>Banner I once made</p>
+                <img src="archive/2021/Banner/Banner.png" class=Banner></img>
+                <video src="archive/2021/Banner/Banner.mp4" class=Banner controls loop></video>
+            </div>
+            <div class=category>
+                <p class=Blockfilm>Jacklyn 3D VRM model</p>
+                <img src="archive/2021/Jacklyn/Jacklyn1.jpeg" class=Jacklyn></img>
+                <img src="archive/2021/Jacklyn/Jacklyn2.jpeg" class=Jacklyn></img>
+                <img src="archive/2021/Jacklyn/Jacklyn3.jpeg" class=Jacklyn></img>
+                <video src="archive/2021/Jacklyn/JacklynFacial.mp4" class=Jacklyn controls loop></video>
+                <video src="archive/2021/Jacklyn/JacklynTurnaround.mp40001-0240.webm" class=Jacklyn controls loop></video>                
+            </div>
+        </div>
+    </div>
+    <div class=year_2020>
+        <div class=media-container>
+            <div class=category>
+                <p class=Year>2020</p>
+                <p class=Chromacorps>A submission for the first ChromaCorps challenge</p>
+                <img src="archive/2020/Chromacorps.png" class=Chroomacorps></img>
+                <p class=Pimplepop>A drawing of a kid struggling with pimples.</p>
+                <img src="archive/2020/Pimplepop.png" class=Pimplepop></img>
+                <p class=Welcometoheaven>Video that works in 360 degrees</p>
+                <video src="archive/2020/Welcometoheaven.mp4" class=Welcometoheaven controls loop></video>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer>
+        <p class=copyrights>© <script>document.write(new Date().getFullYear())</script> HannahFantasia. All Rights Reserved.</p>
+    </footer>
+
+</body>
+<script>
+  function toggleMedia(element) {
+      element.classList.toggle("enlarged");
+  }
+</script>
+</body>
+
+</html>
