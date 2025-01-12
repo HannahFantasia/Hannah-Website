@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Project Description" />
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
+  <link rel="icon" href="/assets/common/images/favicon.png">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/common/css/styles.css">
+</head>
+<body>
+  <!-- Include Navbar -->
+  <div id="navbar"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $("#navbar").load("/components/navbar.html");
+    });
+  </script>
+
+  <h1>Animation</h1>
+  <div id="projects-container"></div>
+  <script src="../../../assets/common/js/script.js"></script>
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+  <script>
+    $(function(){
+      $("#footer").load("/components/footer.html");
+    });
+  </script>
+</body>
+</html>

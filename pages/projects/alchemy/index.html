@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Project Description" />
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
+  <link rel="icon" href="/assets/common/images/favicon.png">
+  <link rel="stylesheet" href="/assets/alchemy/css/alchemy-styles.css">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+</head>
+<body>
+  <!-- Include Navbar -->
+  <div id="navbar"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $("#navbar").load("/components/navbar.html");
+    });
+  </script>
+
+  <!-- load markdown library-->
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+  <!-- load markdown file -->
+    <zero-md src="alchemy.md"></zero-md>
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+  <script>
+    $(function(){
+      $("#footer").load("/components/footer.html");
+    });
+  </script>
+</body>
+</html>

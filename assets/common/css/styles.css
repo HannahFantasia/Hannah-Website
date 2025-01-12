@@ -1,0 +1,56 @@
+h1 {
+  text-align: left;
+  color: rgb(31, 28, 28);
+  padding-left: 12px;
+}
+
+.card {
+  margin: 12px;
+  overflow: hidden;
+  padding: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card h3 a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.card img {
+  border: 2px solid rgb(201, 186, 255);
+  max-width: 100%;
+  height: auto;
+}
+
+.card:hover img {
+  border: 2px solid rgb(81, 104, 236);
+}
+
+#projects-container {
+  margin: 12px;
+  display: grid;
+  justify-content: center;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 12px));
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 4px;
+    padding: 4px;
+  }
+
+  .card img {
+    max-width: 90%;
+  }
+
+  h1 {
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+  #projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 12px));
+  }
+}

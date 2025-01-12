@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Project Description" />
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/assets/animation/krabbel-en-babbel/css/krabbel-en-babbel-styles.css">
+  <link rel="icon" href="/assets/common/images/favicon.png">
+</head>
+<body>
+  <!-- Include Navbar -->
+  <div id="navbar"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $("#navbar").load("/components/navbar.html");
+    });
+  </script>
+
+  <!-- Content Section -->
+  <div class="title">
+    <h1>Krabbel en Babbel</h1>
+    <h2>On-Hold</h2>
+</div>
+<div class="content-section">
+ <div class="video-content">
+    <img src="/assets/animation/krabbel-en-babbel/media/concepts/concept_001.jpg" alt="Description of the image" height="440">
+ </div>
+ <div class="text-content">
+     <p>At a daycare center in the center of Utrecht, we see a young fellow struggling with drawing, their imagination has yet to come alive but behold! Watch how kindness can bring your wildest dreams alive!</p>
+     <p>My film explores the magical power of making drawings come to life. How our imagination can be our way to happiness and how we need our own source of joy to maintain the life that we have.</p>
+     <p>Krabbel & Babbel, a project of mine that started out of nowhere, struggling to draw a certain style of a character, I ended up with the main lady in the green jacket, Laura. Laura shows us how with enough power given to ourselves, we can make our wildest dreams come true.</p>
+ </div>
+</div>
+
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+  <script>
+    $(function(){
+      $("#footer").load("/components/footer.html");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Project Description" />
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/assets/animation/butterfly-dreams/css/butterfly-dreams-styles.css">
+  <link rel="icon" href="/assets/common/images/favicon.png">
+</head>
+<body>
+  <!-- Include Navbar -->
+  <div id="navbar"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $("#navbar").load("/components/navbar.html");
+    });
+  </script>
+
+  <!-- Content Section -->
+   <div class="title">
+       <h1>Butterfly Dreams</h1>
+       <h2>Computer Graphics, Collage, Stopmotion inspired</h2>
+   </div>
+  <div class="content-section">
+    <div class="video-content">
+        <iframe src="https://player.vimeo.com/video/904571429?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" width="800" height="440" allowfullscreen></iframe>
+    </div>
+    <div class="text-content">
+        <p>When a lonely lady scoots through the limbo, she encounters an odd fellow. These surprises bring her to a place she has never been to.</p>
+        <p>Butterfly Dreams, a memory of mine that exaggerates the joy I tried to give a disadvantaged person. My film explores both the unfortunate and the fortunate. Nothing happens at the end one might think but yet the courage to live on has to be maintained, even when we don't know what to say. In simpler words, sympathy.</p>
+        <p>While alone at night, I opened my sketchbook, and drew out this memory, hoping to give it a place. I previously was working on krabbel & babbel but lost the connection to that project. The use of cutout collages helped to express the chaos through my brain while it was happening. The limbo was important to maintain the feeling of being lost.</p>
+    </div>
+</div>
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+  <script>
+    $(function(){
+      $("#footer").load("/components/footer.html");
+    });
+  </script>
+</body>
+</html>

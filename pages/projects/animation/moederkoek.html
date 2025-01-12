@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Project Description" />
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/assets/animation/moederkoek/css/moederkoek-styles.css">
+  <link rel="icon" href="/assets/common/images/favicon.png">
+</head>
+<body>
+  <!-- Include Navbar -->
+  <div id="navbar"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $("#navbar").load("/components/navbar.html");
+    });
+  </script>
+
+  <!-- Content Section -->
+  <div class="title">
+    <h1>Moederkoek (Placenta)</h1>
+    <h2>Computer Graphics, Stop Motion Inspired</h2>
+</div>
+<div class="content-section">
+ <div class="video-content">
+     <iframe src="https://player.vimeo.com/video/1046103769?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" width="800" height="450" allowfullscreen></iframe>
+ </div>
+ <div class="text-content">
+     <p>A bag falls into the limbo, a child comes out of it. While the child is lost, it's mind is stuck on wanting to grow up</p>
+     <p>My explorations on running away from home have converged into this film, a sensitive subject for people who cannot bear to stand the place where they come from. They wish to be safe somewhere yet cannot find it as easily. Sometimes that means to leave something behind that you always have had with you when growing up.</p>
+     <p>Moederkoek is a film that started out from wanting to explore my immigrant background. I am one of the first in the family in the three figures that actively tries to pursue an education. Not that I was good at school to begin with. As I explored the subject of being disadvantaged and making your own way, it started to boil down to 'running away from home'.</p>
+ </div>
+</div>
+
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+  <script>
+    $(function(){
+      $("#footer").load("/components/footer.html");
+    });
+  </script>
+</body>
+</html>

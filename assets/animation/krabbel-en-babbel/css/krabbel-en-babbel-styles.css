@@ -1,0 +1,33 @@
+.content-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px; /* Adjust this value as needed */
+}
+
+.content-section .video-content {
+    display: flex;
+    justify-content: center;
+}
+
+.content-section .text-content {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .content-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.title h1{
+    text-align: left;
+    color: rgb(31, 28, 28);
+    padding-left: 12px;
+  }
+  .title h2{
+    text-align: left;
+    color: rgb(31, 28, 28);
+    padding-left: 12px;
+  }

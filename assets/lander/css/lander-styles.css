@@ -1,0 +1,13 @@
+.lander-content h1 {
+  text-align: center;
+  color: rgb(31, 28, 28);
+  font-family: 'KaeruKaeru';
+  font-size: 72px;
+}
+
+.lander-content h2 {
+  text-align: center;
+  color: rgb(31, 28, 28);
+  font-family: 'FacadeOuest';
+  font-size: 24px;
+}

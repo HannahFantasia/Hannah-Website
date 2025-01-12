@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'KaeruKaeru';
+    src: url('/assets/fonts/kaerukaeru-Regular.woff2') format('woff2'),
+         url('/assets/fonts/kaerukaeru-Regular.woff') format('woff'),
+         url('/assets/fonts/kaerukaeru-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'FacadeEst';
+    src: url('/assets/fonts/Facade-Est.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FacadeOuest';
+    src: url('/assets/fonts/Facade-Ouest.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FacadeSudOuest';
+    src: url('/assets/fonts/Facade-Sud-Ouest.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FacadeSud';
+    src: url('/assets/fonts/Facade-Sud.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyBoldItalic';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_Bold_Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyBold';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyExtraBoldItalic';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_ExtraBold_Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyExtraBold';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyLightItalic';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_Light_Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyLight';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyMediumItalic';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_Medium_Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyMedium';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShantellSansBouncyRegularItalic';
+    src: url('/assets/fonts/Shantell_Sans-Bouncy_Regular_Italic.woff2') format('woff2');
+}
